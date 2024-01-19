@@ -1,0 +1,43 @@
+/* test */
+nav{
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.container-fluid{
+    height: 100vw; /* da rivedere */
+}
+
+.container-fluid main header{
+    height: 120px;
+}
+
+#main-section .row{
+    border: 1px solid red;
+    height: 300px;
+}
+
+#main-section .row [class*="col"]{
+    border: 1px dashed black;
+    height: 300px;
+}
+/* fine test */
+
+.container-fluid aside{
+    height: 100%;
+    width: 150px;
+    /* test */
+
+    min-width: 150px;
+
+    background-color: #0F263C;
+}
+
+.container-fluid main{
+    background-color: rgba(0, 0, 255, 0.2);
+    /* test */
+
+    width: calc(100% - 150px);
+
+    /* overflow-y: auto; */
+}

@@ -1,11 +1,8 @@
 /* test */
-nav{
-    height: 100px;
-    background-color: aquamarine;
-}
-
-.container-fluid{
+.container-fluid.my_container{
     height: 100vw; /* da rivedere */
+
+    overflow: hidden;
 }
 
 .container-fluid main header{
@@ -23,6 +20,14 @@ nav{
 }
 /* fine test */
 
+/* nav */
+nav{
+    background-color: #F8F9FA;
+}
+/* fine nav */
+
+
+
 .container-fluid aside{
     height: 100%;
     width: 150px;
@@ -39,5 +44,5 @@ nav{
 
     width: calc(100% - 150px);
 
-    /* overflow-y: auto; */
+    overflow-y: auto;
 }

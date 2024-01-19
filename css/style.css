@@ -46,3 +46,23 @@ nav{
 
     overflow-y: auto;
 }
+
+
+
+/* SOLUZIONI RESPONSIVE */
+
+/* soluzione table */
+@media screen and (max-width: 991px) {
+
+    .container-fluid aside{
+        align-items: center;
+
+        width: 68px;
+        min-width: 68px;
+    }
+
+    .container-fluid main{
+        width: calc(100% -  68px);
+    }
+
+}

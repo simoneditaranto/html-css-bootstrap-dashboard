@@ -24,29 +24,40 @@
 
             <div class="container-fluid d-flex flex-nowrap bg-white">
                 <a class="navbar-brand" href="#">
-                    <img src="./img/logo.svg" alt="Logo" width="133" height="28" class="d-inline-block align-text-top">
+                    <img src="./img/mobile-logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top d-lg-none">
+                    <img src="./img/logo.svg" alt="Logo" width="133" height="28" class="d-none d-lg-inline-block align-text-top">
                 </a>
                 
-                <div class="search-bar flex-grow-1 d-flex align-items-center ps-2 me-2 rounded-2 bg-secondary bg-opacity-25"> <!---->
+                <div class="search-bar flex-grow-1 d-flex align-items-center ps-2 me-2 rounded-2 bg-secondary bg-opacity-25">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input class="form-control ps-2 border-0 bg-transparent" type="search" placeholder="Prova a cercare: Lezioni di Lavarel" aria-label="Search">
                 </div>
 
                   <ul class="list-group flex-row gap-3">
-                    <li class="list-group-item bg-transparent p-0 border-0 text-secondary-emphasis">
+                    <li class="d-none d-lg-block list-group-item bg-transparent p-0 border-0 text-secondary-emphasis">
                         <i class="fa-solid fa-list"></i>
                     </li>
 
-                    <li class="list-group-item bg-transparent p-0 border-0 text-secondary-emphasis">
+                    <li class="d-none d-lg-block list-group-item bg-transparent p-0 border-0 text-secondary-emphasis">
                         <i class="fa-solid fa-circle-question"></i>
                     </li>
 
-                    <li class="list-group-item bg-transparent p-0 border-0 text-secondary-emphasis">
+                    <li class="d-none d-lg-block list-group-item bg-transparent p-0 border-0 text-secondary-emphasis">
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </li>
 
-                    <li class="list-group-item bg-transparent p-0 border-0 text-warning">
-                        <i class="fa-solid fa-bell"></i>
+                    <li class="list-group-item bg-transparent ps-3 pe-0 p-lg-0 border-0 ">
+                        <!-- <i class="fa-solid fa-bell"></i> -->
+                        <div class="dropdown">
+                            <button class="btn btn-light p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bell text-warning"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li><button class="dropdown-item" type="button">Profilo</button></li>
+                              <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+                              <li><button class="dropdown-item" type="button">Logout</button></li>
+                            </ul>
+                          </div>
                     </li>
 
                   </ul>
@@ -57,8 +68,32 @@
         <div class="container-fluid my_container d-flex p-0">
 
             <!-- navigazione laterale -->
-            <aside>
+            <aside class="d-flex flex-column justify-content-between py-3">
                 
+                <div class="btn-group flex-column px-lg-4" role="group" aria-label="Basic outlined example">
+
+                    <button type="button" class="btn btn-outline-secondary border-0 rounded-0 text-white">
+                        <i class="fa-solid fa-house me-lg-2"></i>
+                        <span class="d-none d-lg-inline-block ">Home</span>
+                    </button>
+
+                    <button type="button" class="btn btn-outline-secondary border-0 text-white">
+                        <i class="fa-solid fa-chart-simple me-lg-2"></i>
+                        <span class="d-none d-lg-inline-block me-2">Stats</span>
+                    </button>
+
+                    <button type="button" class="btn btn-outline-secondary border-0 rounded-0 text-white">
+                        <i class="fa-solid fa-signal me-lg-2"></i>
+                        <span class="d-none d-lg-inline-block ">Signal</span>
+                    </button>
+
+                </div>
+
+                <button type="button" class="btn btn-outline-secondary mx-3 border-0 rounded-0 text-white">
+                    <i class="fa-solid fa-gear me-lg-2"></i>
+                    <span class="d-none d-lg-inline-block">Admmin</span>
+                </button>
+
             </aside>
 
             <!-- sezione main -->

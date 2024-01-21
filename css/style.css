@@ -1,22 +1,23 @@
 /* test */
 .container-fluid.my_container{
-    height: 100vw; /* da rivedere */
+    height: 100vh; 
+} 
 
-    overflow: hidden;
-}
-
-.container-fluid main header{
-    height: 120px;
-}
+/* .container-fluid main header{
+    
+} */
 
 #main-section .row{
     border: 1px solid red;
     height: 300px;
 }
 
+header .row [class*="col"]{
+    /* border: 1px dashed black; */
+}
+
 #main-section .row [class*="col"]{
-    border: 1px dashed black;
-    height: 300px;
+    /* border: 1px dashed black; */
 }
 /* fine test */
 
@@ -26,26 +27,44 @@ nav{
 }
 /* fine nav */
 
-
-
+/* sezione aside */
 .container-fluid aside{
-    height: 100%;
-    width: 150px;
+    /* height: 100%; */
     /* test */
-
+    
+    width: 150px;
     min-width: 150px;
 
     background-color: #0F263C;
 }
+/* sezione aside */
 
+
+/* sezione main */
 .container-fluid main{
     background-color: rgba(0, 0, 255, 0.2);
     /* test */
 
     width: calc(100% - 150px);
-
-    overflow-y: auto;
 }
+/* fine sezione main */
+
+
+/* sezione main header */
+header .row [class*="col"] .breadcrumb{
+    --bs-breadcrumb-divider: none;
+}
+
+header .row [class*="col"] .breadcrumb a{
+    background-color: #165BBA;
+}
+
+header .row [class*="col"] .breadcrumb .breadcrumb-item.my_bc_item{
+    background-color: #165BBA;
+}
+/* fine sezione main header */
+
+
 
 
 

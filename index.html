@@ -20,12 +20,12 @@
     <body>
         
         <!-- navbar -->
-        <nav class="navbar">
+        <nav class="navbar fixed-top">
 
             <div class="container-fluid d-flex flex-nowrap bg-white">
-                <a class="navbar-brand" href="#">
-                    <img src="./img/mobile-logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top d-lg-none">
-                    <img src="./img/logo.svg" alt="Logo" width="133" height="28" class="d-none d-lg-inline-block align-text-top">
+                <a class="navbar-brand m-0" href="#">
+                    <img src="./img/mobile-logo.png" alt="Logo" width="30" height="30" class="d-inline-block d-lg-none ms-2 me-4">
+                    <img src="./img/logo.svg" alt="Logo" width="133" height="28" class="d-none d-lg-inline-block me-3">
                 </a>
                 
                 <div class="search-bar flex-grow-1 d-flex align-items-center ps-2 me-2 rounded-2 bg-secondary bg-opacity-25">
@@ -65,7 +65,7 @@
         </nav>
 
         <!-- container principale -->
-        <div class="container-fluid my_container d-flex p-0">
+        <div class="container-fluid my_container d-flex p-0 pt-5 overflow-hidden">
 
             <!-- navigazione laterale -->
             <aside class="d-flex flex-column justify-content-between py-3">
@@ -97,10 +97,60 @@
             </aside>
 
             <!-- sezione main -->
-            <main>
+            <main class="overflow-y-auto">
 
                 <!-- header -->
                 <header class="bg-primary">
+
+                    <div class="row px-3 py-5 text-white ">
+
+                        <div class="col-12 col-md-4 col-lg-6 order-2 order-md-1 mb-4 mb-md-0">
+                                <nav aria-label="breadcrumb" class="bg-primary d-flex align-items-center gap-3">
+                                    <h1>Boolean</h1>
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item my_bc_item py-1 px-2 rounded-4" aria-current="page">Piano blaze</li>
+                                    </ol>
+                                </nav>
+                              
+                            <nav aria-label="breadcrumb" class="bg-primary">
+                                <ol class="breadcrumb d-flex align-items-center gap-1 m-0">
+                                    <li class="breadcrumb-item">
+                                        <a class="text-white text-decoration-none py-1 px-2 rounded-4" href="#">3 app</a>
+                                        <i class="fa-solid fa-angles-right "></i>
+                                    </li>
+                                    <li class="breadcrumb-item d-none d-lg-block my_bc_item py-1 px-2 rounded-4">Boolean mobile app</li>
+                                    <li class="breadcrumb-item d-none d-lg-block my_bc_item py-1 px-2 rounded-4" aria-current="page">Boolean web app</li>
+                                    <li class="breadcrumb-item d-none d-lg-block my_bc_item py-1 px-2 rounded-4" aria-current="page">Boolean blog app</li>
+                                    <li class="breadcrumb-item d-block d-lg-none my_bc_item py-1 px-2 rounded-4" aria-current="page">+</li>
+                                </ol>
+                            </nav>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-lg-3 order-3 order-md-2">
+                            
+                            <p>Studenti online negli ultimi 30 minuti</p>
+
+                            <div class="online-students fs-2">
+                                125
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-md-4 col-lg-3 order-1 order-md-3 mb-4 mb-md-0">
+
+                            <div class="new-student">
+
+                                <span class="me-2">Nuovo Studente</span>
+
+                                <button type="button" class="btn btn-outline-light">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </header>
 

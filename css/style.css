@@ -1,28 +1,19 @@
 /* test */
-.container-fluid.my_container{
-    height: 100vh; 
-} 
 
-/* .container-fluid main header{
-    
-} */
-
-#main-section .row{
-    border: 1px solid red;
-    height: 300px;
-}
-
-header .row [class*="col"]{
-    /* border: 1px dashed black; */
-}
-
-#main-section .row [class*="col"]{
-    /* border: 1px dashed black; */
-}
 /* fine test */
 
+
+/* container principale */
+.container-fluid.my_container{
+    height: calc(100vh - 58px);
+} 
+/* fine container principale */
+
+
 /* nav */
-nav{
+.my_nav{
+    height: 58px;
+
     background-color: #F8F9FA;
 }
 /* fine nav */
@@ -35,6 +26,7 @@ nav{
     width: 150px;
     min-width: 150px;
 
+    background-image: url('../img/sidebar-bg.png');
     background-color: #0F263C;
 }
 /* sezione aside */
@@ -42,10 +34,10 @@ nav{
 
 /* sezione main */
 .container-fluid main{
-    background-color: rgba(0, 0, 255, 0.2);
-    /* test */
-
     width: calc(100% - 150px);
+
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 /* fine sezione main */
 
@@ -63,6 +55,15 @@ header .row [class*="col"] .breadcrumb .breadcrumb-item.my_bc_item{
     background-color: #165BBA;
 }
 /* fine sezione main header */
+
+
+/* sezione main main-section */
+#main-section .table .my_btn{
+    width: 35px;
+    height: 35px;
+}
+/* fine sezione main main-section */
+
 
 
 

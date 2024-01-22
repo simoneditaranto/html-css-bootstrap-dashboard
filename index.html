@@ -20,7 +20,7 @@
     <body>
         
         <!-- navbar -->
-        <nav class="navbar fixed-top">
+        <nav class="navbar my_nav">
 
             <div class="container-fluid d-flex flex-nowrap bg-white">
                 <a class="navbar-brand m-0" href="#">
@@ -65,10 +65,10 @@
         </nav>
 
         <!-- container principale -->
-        <div class="container-fluid my_container d-flex p-0 pt-5 overflow-hidden">
+        <div class="container-fluid my_container d-flex p-0 overflow-hidden">
 
             <!-- navigazione laterale -->
-            <aside class="d-flex flex-column justify-content-between py-3">
+            <aside class="d-flex flex-column justify-content-between py-4">
                 
                 <div class="btn-group flex-column px-lg-4" role="group" aria-label="Basic outlined example">
 
@@ -102,7 +102,7 @@
                 <!-- header -->
                 <header class="bg-primary">
 
-                    <div class="row px-3 py-5 text-white ">
+                    <div class="row px-3 py-4 text-white ">
 
                         <div class="col-12 col-md-4 col-lg-6 order-2 order-md-1 mb-4 mb-md-0">
                                 <nav aria-label="breadcrumb" class="bg-primary d-flex align-items-center gap-3">
@@ -159,21 +159,313 @@
 
                     <div class="row m-0">
 
-                        <div class="col-md-12 col-lg-8">
+                        <div class="col-12 col-lg-8">
 
-                            <!-- test -->
-                            <div class="table my-3 h-50 bg-success">
+                            <div class="card mt-4">
+
+                                <div class="card-header">
+                                    <h2>Prossime Classi</h2>
+                                </div>
+                                
+                                <div class="card-body">
+                                  
+                                    <div class="table-responsive">
+
+                                        <table class="table">
+                                            <thead>
+                                                <tr class="text-center">
+                                                    <th scope="col" class="text-start fw-normal">Nome</th>
+                                                    <th scope="col" class="fw-normal d-none d-md-table-cell">Data inizio</th>
+                                                    <th scope="col" class="fw-normal d-none d-md-table-cell">ROI</th>
+                                                    <th scope="col" class="fw-normal">Stato</th>
+                                                    <th scope="col" class="fw-normal">Azioni</th>
+                                                </tr>
+                                            </thead>
+        
+                                            <tbody class="text-center">
+        
+                                                <tr>
+        
+                                                    <th scope="row">
+                                                        <div class="class_number d-flex align-items-center gap-2">
+                                                            <img src="./img/class-avatar.jpg" width="30" height="30" alt="class avatar">
+                                                            <span class="fw-normal">Classe 75</span>
+                                                        </div>
+                                                    </th>
+        
+                                                    <td class="d-none d-md-table-cell">15 Feb 2021</td>
+        
+                                                    <td class="d-none d-md-table-cell">20%</td>
+        
+                                                    <td>
+                                                        <button type="button" class="btn btn-success opacity-100"
+                                                                style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                                                                disabled>
+                                                            Done
+                                                        </button>
+                                                    </td>
+        
+                                                    <td>
+                                                        <button type="button" class="btn btn-outline-secondary p-0 my_btn">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </button>
+        
+                                                        <button type="button" class="btn btn-outline-secondary p-0 my_btn">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </button>
+                                                    </td>
+        
+                                                </tr>
+        
+                                                <tr>
+        
+                                                    <th scope="row">
+                                                        <div class="class_number d-flex align-items-center gap-2">
+                                                            <img src="./img/class-avatar.jpg" width="30" height="30" alt="class avatar">
+                                                            <span class="fw-normal">Classe 76</span>
+                                                        </div>
+                                                    </th>
+        
+                                                    <td class="d-none d-md-table-cell">16 Feb 2021</td>
+        
+                                                    <td class="d-none d-md-table-cell">20%</td>
+        
+                                                    <td>
+                                                        <button type="button" class="btn btn-success opacity-100"
+                                                                style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                                                                disabled>
+                                                            Done
+                                                        </button>
+                                                    </td>
+        
+                                                    <td>
+                                                        <button type="button" class="btn btn-outline-secondary p-0 my_btn">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </button>
+        
+                                                        <button type="button" class="btn btn-outline-secondary p-0 my_btn">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </button>
+                                                    </td>
+        
+                                                </tr>
+        
+                                                <tr>
+        
+                                                    <th scope="row">
+                                                        <div class="class_number d-flex align-items-center gap-2">
+                                                            <img src="./img/class-avatar.jpg" width="30" height="30" alt="class avatar">
+                                                            <span class="fw-normal">Classe 77</span>
+                                                        </div>
+                                                    </th>
+        
+                                                    <td class="d-none d-md-table-cell">17 Feb 2021</td>
+        
+                                                    <td class="d-none d-md-table-cell">20%</td>
+        
+                                                    <td>
+                                                        <button type="button" class="btn btn-warning opacity-100 text-white"
+                                                                style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                                                                disabled>
+                                                            process
+                                                        </button>
+                                                    </td>
+        
+                                                    <td>
+                                                        <button type="button" class="btn btn-outline-secondary p-0 my_btn">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </button>
+        
+                                                        <button type="button" class="btn btn-outline-secondary p-0 my_btn">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </button>
+                                                    </td>
+        
+                                                </tr>
+        
+                                                <tr>
+                                                    
+                                                <th scope="row">
+                                                    <div class="class_number d-flex align-items-center gap-2">
+                                                        <img src="./img/class-avatar.jpg" width="30" height="30" alt="class avatar">
+                                                        <span class="fw-normal">Classe 78</span>
+                                                    </div>
+                                                </th>
+        
+                                                <td class="d-none d-md-table-cell">18 Feb 2021</td>
+        
+                                                <td class="d-none d-md-table-cell">20%</td>
+        
+                                                <td>
+                                                    <button type="button" class="btn btn-success opacity-100"
+                                                    style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                                                    disabled>
+                                                    Done
+                                                </button>
+                                                </td>
+        
+                                                <td>
+                                                <button type="button" class="btn btn-outline-secondary p-0 my_btn">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </button>
+        
+                                                <button type="button" class="btn btn-outline-secondary p-0 my_btn">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                                </td>
+        
+                                                </tr>
+        
+                                                <tr>
+        
+                                                <th scope="row">
+                                                <div class="class_number d-flex align-items-center gap-2">
+                                                    <img src="./img/class-avatar.jpg" width="30" height="30" alt="class avatar">
+                                                    <span class="fw-normal">Classe 79</span>
+                                                </div>
+                                                </th>
+        
+                                                <td class="d-none d-md-table-cell">19 Feb 2021</td>
+        
+                                                <td class="d-none d-md-table-cell">20%</td>
+        
+                                                <td>
+                                                    <button type="button" class="btn btn-danger opacity-100"
+                                                        style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                                                        disabled>
+                                                            failed
+                                                    </button>
+                                                </td>
+        
+                                                <td>
+                                                <button type="button" class="btn btn-outline-secondary p-0 my_btn">
+                                                <i class="fa-solid fa-pencil"></i>
+                                                </button>
+        
+                                                <button type="button" class="btn btn-outline-secondary p-0 my_btn">
+                                                <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                                </td>
+        
+                                                </tr>
+        
+                                                <tr>
+        
+                                                <th scope="row">
+                                                <div class="class_number d-flex align-items-center gap-2">
+                                                <img src="./img/class-avatar.jpg" width="30" height="30" alt="class avatar">
+                                                <span class="fw-normal">Classe 80</span>
+                                                </div>
+                                                </th>
+        
+                                                <td class="d-none d-md-table-cell">20 Feb 2021</td>
+        
+                                                <td class="d-none d-md-table-cell">20%</td>
+        
+                                                <td>
+                                                    <button type="button" class="btn btn-success opacity-100"
+                                                            style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                                                            disabled>
+                                                            Done
+                                                        </button>
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        <button type="button" class="btn btn-outline-secondary p-0 my_btn">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </button>
+                                                        
+                                                        <button type="button" class="btn btn-outline-secondary p-0 my_btn">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </button>
+                                                    </td>
+                                                    
+                                                </tr>
+        
+                                                <tr>
+                                                    
+                                                    <th scope="row">
+                                                        <div class="class_number d-flex align-items-center gap-2">
+                                                            <img src="./img/class-avatar.jpg" width="30" height="30" alt="class avatar">
+                                                            <span class="fw-normal">Classe 81</span>
+                                                        </div>
+                                                    </th>
+                                                    
+                                                    <td class="d-none d-md-table-cell">21 Feb 2021</td>
+                                                    
+                                                    <td class="d-none d-md-table-cell">20%</td>
+                                                    
+                                                    <td>
+                                                        <button type="button" class="btn btn-danger opacity-100"
+                                                        style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                                                        disabled>
+                                                            failed
+                                                    </button>
+                                                </td>
+        
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary p-0 my_btn">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    
+                                                    <button type="button" class="btn btn-outline-secondary p-0 my_btn">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </td>
+        
+                                                </tr>
+        
+                                                <tr>
+        
+                                                <th scope="row">
+                                                    <div class="class_number d-flex align-items-center gap-2">
+                                                        <img src="./img/class-avatar.jpg" width="30" height="30" alt="class avatar">
+                                                        <span class="fw-normal">Classe 82</span>
+                                                    </div>
+                                                </th>
+        
+                                                <td class="d-none d-md-table-cell">22 Feb 2021</td>
+        
+                                                <td class="d-none d-md-table-cell">20%</td>
+        
+                                                <td>
+                                                    <button type="button" class="btn btn-success opacity-100"
+                                                    style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                                                    disabled>
+                                                    Done
+                                                </button>
+                                                </td>
+        
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary p-0 my_btn">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    
+                                                    <button type="button" class="btn btn-outline-secondary p-0 my_btn">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </td>
+        
+                                                </tr>
+        
+                                            </tbody>
+                                            
+                                        </table>
+        
+                                    </div>
+
+                                </div>
 
                             </div>
 
-                            <div class="faq h-25 bg-dark">
+                            <div class="faq h-25 bg-dark mt-5">
 
                             </div>
                             <!-- fine test -->
 
                         </div>
                         
-                        <div class="col-md-12 col-lg-4">
+                        <div class="col-12 col-lg-4">
 
                             <!-- test -->
                             <div class="table my-3 h-25 bg-success">

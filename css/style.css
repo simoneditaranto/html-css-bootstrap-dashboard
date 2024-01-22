@@ -36,8 +36,7 @@
 .container-fluid main{
     width: calc(100% - 150px);
 
-    overflow-y: auto;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 /* fine sezione main */
 
